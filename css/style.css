@@ -1,15 +1,79 @@
-img {
-    width: 200px;    
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
+  /* height: 100vh;  Ocupa toda a altura da tela */
+  /* width: 100vw;  Ocupa toda a largura da tela */
 }
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  justify-content: space-around;
+}
+
+.container-left {
+  width: 40%;
+}
+
+.logo {
+  width: 350px;
+}
+.marioLuigi {
+  width: 500px;
+}
+
 button {
-    width: 200px;
-    height: 50px;
-    background-color: #c51111;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background: #c51111;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mascara-video {
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+.text {
+  color: #ffffff;
+  font-size: 20px;
+  width: 85%;
 }
