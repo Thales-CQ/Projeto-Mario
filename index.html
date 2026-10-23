@@ -1,12 +1,22 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+  <head class="caixa-header">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header>
+      <img
+        class="logo-header"
+        src="./assets/images/logo-header.png"
+        alt="logo-site-mario"
+      />
+      <a class="nav-link">Home</a>
+      <a class="nav-link" onclick="startButton()".>Fale Conosco</a>
+      <a class="nav-link">Nosso Serviço</a>
+    </header>
     <div class="container">
       <section class="container-left">
         <img
@@ -25,7 +35,7 @@
           Apresentamos a vocês os encanadores mais famosos do Reino dos
           Cogumelos - Mario e Luigi!
         </p>
-        <button>Entre em contato</button>
+        <button class="bnt-contato" onclick="startButton()">Entre em contato</button>
       </section>
 
       <section class="container-right">
@@ -40,5 +50,20 @@
       <video src="/assets/images/video.mp4" autoplay muted loop></video>
       <div class="mascara-video"></div>
     </div>
+    <div class="link-whatsapp">
+      <a
+        href="https://wa.me/5555319951521?text=Ol%C3%A1!%20tudo%20bem%2C%20tenho%20interesse%20nos%20seus%20projetos"
+      ></a>
+      <img src="./assets/images/whatsapp.png" alt="whatsapp" />
+    </div>
+
+    <form class="formulario" action="">
+      <input type="nome" placeholder="Seu nome" />
+      <input type="tel" placeholder="Seu telefone" />
+      <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+      <button class="bnt-contato type="submit">Pedir Orçamento</button>
+    </form>
+    <div class="mascara-form" onclick="stopButton()"></div>
   </body>
+  <script src="./js/scripts.js"></script>
 </html>
